@@ -1,0 +1,61 @@
+@use '../../scss/' as * ;
+
+footer {
+    margin-top: 10px;
+    background-color: white;
+    border-top: 1px solid #dce4e7;
+    width: 100%;
+    color: black;
+    padding: 10px 0px;
+
+
+    div {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: $font-cormorant;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-family: $font-subtitle;
+        color: #949799;
+        font-size: 0.5rem;
+    }
+
+    @include xs {
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+       
+    @include md {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @include lg {
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+        
+    }
+
+}

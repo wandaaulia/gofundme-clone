@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$font-cormorant : 'Cormorant Garamond', serif;
+$font-subtitle : 'Open Sans', sans-serif;
+$font-small :  'Open Sans', sans-serif;
+
+$base-color : black;
+$text-color : #949799;
+$text-card : white;
+
+//xs
+$small-device : 390px;
+$mobile-width: 530px;
+
+//sm 
+$mobile-width-2 : 540px;
+$mobile-width-3 : 767px; 
+
+//md 
+$mobile-width-4 : 768px; 
+$table-width: 1023px;
+
+//lg
+$lg-width-1 : 1024px;
+
+$xs : 390px;
+$sm : 640px;
+$md	 :768px;
+$lg	:1024px;	
+$xl:1280px;	
+$xxl:1536px;

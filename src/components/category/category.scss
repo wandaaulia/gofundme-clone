@@ -1,0 +1,106 @@
+@use '../../scss/' as *;
+
+.category {
+    @include flex(column, center);
+    width: 90%;
+    margin: 30px auto;
+    gap: 10px;
+    font-family: $font-cormorant;
+    font-weight: bold;
+
+     h3 {
+        @include title($font-cormorant);
+     }
+
+     @include lg {
+        width: 85%;
+     }
+}
+
+.content-category {
+    @include flex(row, flex-start);
+    flex-wrap: wrap;
+    gap: 6px;
+
+    @include md {
+        gap: 10px;
+       
+    }
+
+    @include lg {
+        gap: 12px;
+       
+    }
+
+    @include xxl {
+        gap: 15px;
+       
+    }
+}
+
+.card-category {
+   @include flex(column, center);
+    align-items: center;
+    color: $text-card;
+    background-color: $base-color;
+    padding: 15px 2px;
+    width: 28%;
+    gap: 2px;
+    font-size: 0.6rem;
+
+    
+    hr {
+        width: 25%;
+        height: 2px;
+        background-color: white;
+    }
+
+    @include xs {
+        font-size: 0.8rem;
+        padding: 15px;
+        line-height: 0.7rem;
+
+        hr {
+            width: 28%; }
+    }
+
+    @include md { 
+        width: 15%;
+        padding: 40px 0px;
+        font-size: 1rem;
+        gap: 8px;
+
+        
+        hr {
+            width: 35%;
+            height: 3px; 
+        }
+
+    }
+
+
+    @include lg {
+        width: 14%;
+        padding: 50px 0px;
+        font-size: 1.1rem;
+        gap: 10px;
+    }
+
+    @include xl {
+        padding: 60px 0px;
+        font-size: 1.2rem;
+        gap: 12px;
+        width: 13%;
+    }
+
+    @include xxl {
+        padding: 64px 0px;
+        font-size: 1.2rem;
+        gap: 12px;
+        width: 10%;
+    }
+
+}
+
+
+

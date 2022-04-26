@@ -1,0 +1,33 @@
+@use './breakpoints' as *;
+
+@mixin flex($direction, $justify-content) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+}
+
+
+@mixin title($font) {
+    font-family: $font;
+    font-size: 0.75rem;
+    font-weight: bold;  
+
+    @include md {
+        font-size: 1rem;
+       
+    }
+
+    @include lg {
+        font-size: 1.2rem;
+       
+    }
+
+    @include xl {
+        font-size: 1.4rem;
+       
+    }
+
+    @include xxl {
+        font-size: 1.6rem; 
+    }
+}

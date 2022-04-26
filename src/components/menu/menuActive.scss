@@ -1,0 +1,107 @@
+@use '../../scss/' as *;
+
+.container-menu {
+    position: absolute;
+    background-color: black;
+    opacity: 0.95;
+    width: 100%;
+    top: 0px;
+}
+
+
+.menu-active {
+    @include flex(column, flex-start);
+    gap: 5px;
+    width: 90%;
+    height: 200px;
+    padding: 10px 0px;
+    color: white;
+    margin: auto;
+    
+    @include xs {
+        font-size: 1.2rem;
+        height: 250px;
+    }
+
+    @include md {
+        height: 300px;
+        font-size: 1.5rem;
+        padding: 12px 0px;
+    }
+
+    @include lg {
+        font-size: 1.8rem;
+        height: 360px;
+        width: 85%;
+        padding: 15px 0px;
+    }
+
+    @include xl {
+        height: 430px;
+    }
+
+    @include xxl {
+        height: 540px;
+    }
+
+}
+
+.icon-menu {
+    @include flex(row, space-between);
+    @include title($font-cormorant);
+
+    cursor: pointer;
+
+    @include lg {
+        font-size: 1.6rem;
+    }
+
+    @include xl {
+        font-size: 1.6rem;
+    }
+
+    @include xxl {
+        font-size: 1.8rem;
+    }
+}
+
+
+.content-menu {
+    @include flex(column, center);
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    font-family: $font-cormorant;
+    list-style-type: none;
+    color: #949799;
+    height: 100%;
+
+    li:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    @include xs {
+   
+        font-size: 1.2rem;
+    }
+
+    @include md {
+        font-size: 1.5rem;
+    }
+
+    @include lg {
+        font-size: 1.7rem;
+        gap: 30px;
+    }
+
+    @include xl {
+        font-size: 1.9rem;
+        gap: 50px;
+    }
+
+    @include xxl {
+        font-size: 2rem;
+    }
+
+}

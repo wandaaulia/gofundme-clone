@@ -1,0 +1,194 @@
+@use '../../scss/' as *;
+
+.text-navbar {
+    font-family: $font-cormorant;
+}
+.container {
+    background: url('../../assets/img_header.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.navbar {
+    @include flex(row, space-between);
+    width: 90%;
+    margin: auto; 
+    position: relative;
+    font-size: 0.8rem;
+    padding: 10px 0px;
+    height: 180px;
+    margin: auto;
+
+    @include xs {
+        height: 220px;
+        font-size: 1.2rem;
+    }
+
+    @include md {
+        height: 290px;
+        font-size: 1.5rem;
+        padding: 12px 0px;
+    }
+
+    @include lg {
+        height: 350px;
+        font-size: 1.7rem;
+        width: 85%;
+        padding: 15px 0px;
+    }
+
+    @include xl {
+        height: 410px;
+    }
+
+    @include xxl {
+        height: 520px;
+    }
+}
+
+.content-navbar {
+    @include flex(column, center);
+    align-items: flex-start;
+    width: 47%;
+    left: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    .button-navbar {
+        background-color: black;
+        font-size: 0.3rem;
+        padding: 5px;
+        color: white;
+        border: none;
+
+    }
+
+    .text-navbar {
+        font-size: 0.8rem;
+        font-weight:bold;
+        font-family: $font-cormorant;
+    }
+
+    .text-caption-navbar {
+        color: #949799;
+        font-family: $font-subtitle;
+        font-size: 0.4rem;
+        padding-bottom: 2px;
+    }
+         
+
+    @include xxs {
+        width: 40%;
+    }
+
+    
+    @include xs {
+        gap: 4px;
+
+        .button-navbar {
+        font-size: 0.6rem;
+        padding: 6px 9px;
+        }
+
+        .text-navbar {
+            font-size: 1.1rem;
+        }
+
+        .text-caption-navbar {
+            font-size: 0.6rem;
+        }
+    }
+   
+    @include sm {
+        padding: 20px 20px;
+        width: 45%;
+    }
+
+    @include md {
+        
+        width: 34%;
+        height: 50%;
+
+        .button-navbar {
+            font-size: 0.7rem;
+            padding: 7px 10px;
+        }
+
+        .text-navbar {
+            font-size: 1.3rem;
+        }
+
+        .text-caption-navbar {
+            font-size: 0.7rem;
+        }
+    }
+
+    @include lg {
+        gap: 10px;
+        width: 30%;
+        height: 55%;
+
+        .button-navbar {
+            font-size: 0.8rem;
+        }
+        
+        .text-navbar {
+            font-size: 1.6rem;
+        }
+
+        .text-caption-navbar {
+            font-size: 0.8rem;
+            padding-bottom: 4px;
+        }
+    }
+
+    
+    @include xl {
+        width: 30%;
+        height: 55%;
+        padding: 25px 25px;
+
+        .button-navbar {
+            padding: 9px 12px;
+            font-size: 0.9rem;
+        }
+
+        .text-navbar {
+            font-size: 2rem;
+        }
+
+        .text-caption-navbar {
+            font-size: 0.9rem;
+            padding-bottom: 6px;
+        }
+       
+    }
+
+    @include xxl {
+        gap: 12px;
+        width: 25%;
+        height: 50%;
+
+        .button-navbar {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            padding: 12px 25px;
+        }
+
+        .text-navbar {
+            font-size: 2.2rem; 
+        }
+
+        .text-caption-navbar {
+            padding-top: 10px;
+        }
+    }
+
+    
+}
