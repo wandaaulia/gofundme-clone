@@ -1,33 +1,33 @@
 /* eslint-disable quote-props */
 import sun from '../assets/sun.jpg';
 // eslint-disable-next-line no-unused-vars
-import mountain from '../assets/mountain.jpg';
-import ocean from '../assets/ocean.jpg';
+import kids from '../assets/img_header.jpg';
+// import ocean from '../assets/ocean.jpg';
 import sky from '../assets/sky.jpg';
 import sunset from '../assets/sunset.jpg';
-import football from '../assets/football.jpg';
+import monas from '../assets/monas.jpg';
 
 const dataArticle = [
   {
     'category': 'Travels',
     'time': '5 minutes',
-    'title': 'How to Get Sunset',
+    'title': 'How to Find Sunsets',
     'desc': 'The most commonly seen in travellers are sunset',
     'img': sun,
   },
   {
     'category': 'Stories',
     'time': '10 minutes',
-    'title': 'Playing Football with kids',
+    'title': 'Playing with locals',
     'desc': 'The most commonly seen in travellers are ball',
-    'img': football,
+    'img': kids,
   },
   {
     'category': 'Guides',
     'time': '10 minutes',
-    'title': 'Tips Learn to Surf in Bali',
+    'title': 'Tips Holiday in Jakarta',
     'desc': 'The most commonly seen in travellers are waves',
-    'img': ocean,
+    'img': monas,
   },
   {
     'category': 'Stories',
