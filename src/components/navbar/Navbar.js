@@ -19,7 +19,7 @@ const Navbar = () => {
           <MdSearch />
         </div>
         <div className='content-navbar'>
-          <h3 className='text-navbar'> When Is The Best Time of Year To Visit Japan ? </h3>
+          <h3 className='text-navbar'> When Is The Best Time of Year To Travel ? </h3>
           <p className='text-caption-navbar'> The good news for travelers </p>
           <button className='button-navbar' type='button'> Read more </button>
         </div>
