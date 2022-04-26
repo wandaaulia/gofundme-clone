@@ -4,8 +4,6 @@
 #production
 /build
 
-#Distribution directories
-/dist
 
 
 npm-debug.log*
