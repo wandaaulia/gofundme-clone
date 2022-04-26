@@ -1,8 +1,11 @@
-#TravelBlog 
+# TravelBlog 
 Travel Blog website created with ReactJs and SASS
 
+### [Live Site](https://travel-blog-theta.vercel.app/)
 
-##Technologies
+![Restaurant Landing Page](https://i.ibb.co/ZWR2WHJ/travel-blog.jpg)
+
+## Technologies
 Project is created with:
 * React version: 18.0.0
 * SASS : 1.50.0
