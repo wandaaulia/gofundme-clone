@@ -10,7 +10,6 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 module.exports = merge(common, {
     mode: 'production',
-    devtool: 'source-map',
     module: {
         rules: [
             {

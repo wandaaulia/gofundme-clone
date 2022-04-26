@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js --output dist",
     "start": "webpack serve --config webpack.dev.js"
   },
   "keywords": [],
