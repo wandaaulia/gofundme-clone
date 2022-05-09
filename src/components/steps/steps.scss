@@ -140,13 +140,17 @@
 .content-step {
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    gap: 35px;
     align-items: flex-start;
     justify-content: flex-start;
     height: 125px;
 
     h3 {
         padding-bottom: 8px;
+    }
+
+    @include xs {
+        gap: 18px;
     }
 
     @include md {
@@ -193,7 +197,7 @@
 }
 
 .content-step-right {
-    background-color: blue;
+  
     p {
         color: rgb(118, 118, 118);
         font-size: 0.95rem;
@@ -217,19 +221,6 @@
             font-size: 1.6rem;
         }
     }
-
-    @include xxs {
-        background-color: #333;
-    }
-
-    @include xs {
-        background-color: lightblue;
-    }
-
-    @include sm {
-        background-color: lightcoral;
-    }
-    
 }
 
 .img-svg {
