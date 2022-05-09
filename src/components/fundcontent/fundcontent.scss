@@ -195,9 +195,17 @@
 .fund-item {
     display: flex;
     flex-direction: column;
+}
+
+
+.fund-item-img {
+    display: flex;
 
     img {
         border-radius: 8px;
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
 

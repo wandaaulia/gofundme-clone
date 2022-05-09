@@ -67,7 +67,7 @@ const FundContent = () => {
       <div className='fund-item-container'>
         { fund.map((item) => ( 
           <div className='fund-item' key={item.id}> 
-                <img src={item.img} alt='img' />
+                <div className='fund-item-img'> <img src={item.img} alt='img' /> </div>
                 <div className='info-fund-item'> 
                     <h3> {item.title} </h3>
                     <p> {item.body} </p>

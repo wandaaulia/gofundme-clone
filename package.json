@@ -1,9 +1,12 @@
 {
-  "name": "travel-blog",
+  "homepage": "https://wandaaulia.github.io/gofundme-clone  ",
+  "name": "gofundme-clone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d public",
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js"
   },
@@ -32,6 +35,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "glob": "^7.2.0",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.2.3",
