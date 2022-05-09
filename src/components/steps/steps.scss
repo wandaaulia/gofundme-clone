@@ -140,28 +140,15 @@
 .content-step {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 18px;
     align-items: flex-start;
     justify-content: flex-start;
     height: 125px;
-    background-color: blue;
 
     h3 {
         padding-bottom: 8px;
     }
 
-    @include xxs {
-        gap: 18px;
-        background-color: #333;
-    }
-
-    @include xs {
-        background-color: lightblue;
-    }
-
-    @include sm {
-        background-color: lightcoral;
-    }
     @include md {
         flex-direction: column;
         height: 220px;
@@ -206,6 +193,7 @@
 }
 
 .content-step-right {
+    background-color: blue;
     p {
         color: rgb(118, 118, 118);
         font-size: 0.95rem;
@@ -228,6 +216,18 @@
         h3 {
             font-size: 1.6rem;
         }
+    }
+
+    @include xxs {
+        background-color: #333;
+    }
+
+    @include xs {
+        background-color: lightblue;
+    }
+
+    @include sm {
+        background-color: lightcoral;
     }
     
 }
