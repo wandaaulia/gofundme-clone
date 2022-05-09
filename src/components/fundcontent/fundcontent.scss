@@ -1,0 +1,295 @@
+@use '../../scss/' as *;
+
+.fundcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 40px auto 50px auto;
+
+    @include md {
+        width: 96%;
+        margin: 60px auto 90px auto;
+    }
+
+    @include mdd {
+        width: 100%;
+    }
+
+    @include lg {
+        margin: 100px auto 130px auto;
+    }
+
+    @include xl {
+        width: 100%;
+        padding: 0% 1% 0% 1%;
+    }
+
+    @include xxl {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 150px;
+    }
+}
+
+
+.info-fundcontent {
+    color: rgb(118, 118, 118);
+    font-weight: 600;
+    padding-bottom: 14px;
+
+    @include md {
+        padding-bottom: 18px;
+    }
+
+    @include xxl {
+        font-size: 1.2rem;
+    }
+}
+
+.title-fundcontent {
+    color: rgb(51, 51, 51);
+    font-size: 1.8rem;
+    line-height: 39px;
+    padding-right: 30px;
+
+    @include md {
+        line-height: 60px;
+    }
+
+    @include xxl {
+        font-size: 2.4rem;
+        line-height: 82px;
+    }
+}
+
+.fundcontent-top {
+    @include md {
+        margin-bottom: 32px;
+        margin-top: 12px;
+    }
+    
+    @include mdd {
+        width: 90%;
+        margin: auto auto 30px auto;
+    }
+    
+
+    @include xxl {
+        padding-left: 5%;
+    }
+}
+
+.title-button {
+
+    @include md {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.button-slide {
+    display: none;
+
+    @include md {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.next, .prev {
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(51, 51, 51);
+    padding: 4px 8px 2px 8px;
+    border-radius: 5px 5px;
+    height: fit-content;
+    font-size: 1rem;
+
+    @include xl {
+        font-size: 0.9rem;
+        padding: 6px 9px 3px 9px;
+    }
+    // opacity: 0.5;
+}
+
+.next-1 {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 4px 8px 2px 8px;
+    border-radius: 5px 5px;
+    font-size: 1rem;
+}
+
+.fund-item-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 50px;
+
+    .loadmore {
+        border: 1px solid rgb(200, 200, 200);
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(51, 51, 51);
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    @include md {
+          display: none;
+    }
+
+}
+
+.fund-item-wide {
+    display: none;
+
+    @include md {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        gap: 20px;
+        padding:  0px 2px 0px 2px;
+    }
+
+    @include mdd {
+        padding:  0px 38px 0px 38px;
+    }
+
+
+    @include lg {
+        padding:  0px 50px 0px 50px;
+    }
+
+    @include xl {
+        padding:  0px 60px 0px 60px;
+    }
+
+
+    @include xxl {
+        padding:  0px 9.5% 0px 9.5%;
+        :hover {
+            background-color: rgb(248, 248, 248);
+            border-radius: 20px;
+
+        }
+    }
+}
+
+
+.padding-fund-wide {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+
+    @include mdd {
+        padding: 0px 0px;
+    }
+    
+}
+
+.fund-item {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        border-radius: 8px;
+    }
+}
+
+.fund-wide {
+    min-width: 350px;
+    overflow: hidden;
+    display: block;
+
+    @include md {
+        min-width: 350px;
+        // margin: auto 1.2%;
+    }
+
+    @include mdd{
+        min-width: 380px;
+    //    margin: auto 1.3%;
+    }
+
+    @include xxl {
+        min-width: 420px;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+.info-fund-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: rgb(118, 118, 118);
+        line-height: 22px;
+    }
+}
+
+.info-fund-wide {
+    @extend .info-fund-item;
+
+    @include xxl {
+
+        h3 {
+        font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 28px;
+        }
+    }
+}
+
+.raise-fund {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+
+    p {
+        color: rgb(51, 51, 51);
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .dot-fund {
+        color: rgb(200, 200, 200);
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+}
+
+.raise-fund-wide {
+    @extend .raise-fund;
+
+    @include xxl {
+
+        p {
+        font-size: 1.2rem;
+        }
+    }
+}

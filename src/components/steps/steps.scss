@@ -1,0 +1,260 @@
+@use '../../scss/' as *;
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+    text-size-adjust: 100%;
+
+    @include md {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @include mdd {
+        width: 95%;
+    }
+    
+    @include xl {
+        width: 95%;
+        padding: 1% 1% 1% 1%;
+    }
+
+    @include xxl {
+        width: 90%;
+        padding: 1% 3% 2% 3%;
+        margin-bottom: 5px;
+    }
+}
+
+
+.info-step {
+    color: rgb(118, 118, 118);
+    font-weight: 600;
+    padding-bottom: 14px;
+
+    @include xxl {
+        font-size: 1.2rem;
+        padding-bottom: 24px;
+    }
+}
+
+.title-step {
+    color: #333;
+    font-weight:6500;
+    font-size: 2.2rem;
+    line-height: 45px;
+    padding-right: 30px;
+
+    @include md {
+        width: 70%;
+    }
+
+    @include lg {
+        width: 60%;
+    }
+
+    @include xl {
+        font-size: 2.4rem;
+        width: 50%;
+    }
+
+    @include xxl {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+}
+
+.steps-left {
+    margin: auto;
+
+    @include md {
+        width: 96%;
+    }
+}
+
+.steps-right {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+
+    @include md {
+        width: 98%;
+        margin: auto;
+        padding-top: 40px;
+    }
+
+    @include lg {
+        width: 96%;
+    }
+
+    @include xxl {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.list-steps {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+    @include md {
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0px 5px;
+        gap: 0px;
+        scroll-behavior: smooth;
+    }
+
+    @include xxl {
+        overflow-x: hidden;
+    }
+}
+
+.circle-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(2, 169, 92);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include xxl {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+}
+
+.content-step {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 125px;
+
+    h3 {
+        padding-bottom: 8px;
+    }
+
+    @include md {
+        flex-direction: column;
+        height: 220px;
+        gap: 5px;
+        padding: 5px;
+        min-width: 280px;
+    }
+
+    @include mdd {
+        min-width: 280px;
+        height: 260px;
+    }
+
+    @include lg {
+        min-width: 380px;
+    }
+
+    @include xxl {
+        min-width: 470px;
+        height: 380px;
+    }
+}
+
+.content-step-left {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include md {
+        flex-direction: row;
+        gap: 5px;
+        width: 100%;
+        padding: 0px;
+        height: 50%;
+    }
+
+
+}
+
+.content-step-right {
+    p {
+        color: rgb(118, 118, 118);
+        font-size: 0.95rem;
+    }
+
+    h3 {
+        color: rgb(51, 51, 51);
+    }
+
+    @include md {
+        padding: 0px 20px 0px 0px;
+        text-align: left;
+    }
+
+    @include xxl {
+        p {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+        }
+    }
+    
+}
+
+.img-svg {
+    height: 70%;
+    padding-top: 10px;
+
+    @include md {
+        display: none;
+    }
+}
+
+
+
+
+.hr-img {
+    display: none;
+
+    @include md {
+    width: 80%;
+    padding: 0px 6px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    opacity: 0.3;
+    justify-content: center;
+    }
+
+    @include xxl {
+        gap: 15px;
+    }
+
+}
+
+.hr-img { 
+    .rule {
+    height: 1px;
+    display: flex;
+    width: 5%;
+    border-top: 0.02rem solid rgb(51, 51, 51);    ;
+    }
+}
+

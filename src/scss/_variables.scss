@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-$font-cormorant : 'Cormorant Garamond', serif;
-$font-subtitle : 'Open Sans', sans-serif;
-$font-small :  'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+$font-poppins : 'Poppins', sans-serif;
+
 
 $base-color : black;
 $text-color : #949799;
@@ -25,9 +26,11 @@ $table-width: 1023px;
 //lg
 $lg-width-1 : 1024px;
 
-$xs : 390px;
+$xxs : 390px;
+$xs : 540px;
 $sm : 640px;
 $md	 :768px;
+$md-1 : 820px;
 $lg	:1024px;	
 $xl:1280px;	
 $xxl:1536px;

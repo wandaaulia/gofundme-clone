@@ -1,13 +1,13 @@
 @use './variables' as *;
 
 @mixin xxs {
-    @media screen and (min-width: $xs) {
+    @media screen and (min-width: $xxs) {
         @content;
     }
 }
 
 @mixin xs {
-    @media screen and (min-width: $mobile-width-2) {
+    @media screen and (min-width: $xs) {
         @content;
     }
 }
@@ -21,6 +21,12 @@
 
 @mixin md {
     @media only screen and (min-width: $md	) {
+        @content;
+    }
+}
+
+@mixin mdd {
+    @media only screen and (min-width: $md-1	) {
         @content;
     }
 }

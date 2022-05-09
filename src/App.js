@@ -1,22 +1,31 @@
 import React from 'react';
-import Category from './components/category/Category';
-import Footer from './components/Footer/Footer';
-import ListArticle from './components/listArticle/ListArticle';
-import MenuActive from './components/menu/MenuActive';
-import Navbar from './components/navbar/Navbar';
+import {
+  FeaturedTopic, Footer, FundContent, Fundraise, GetStarted, Header, MenuBar, Navbar, Step,
+} from './components';
 import { useGLobalContext } from './contextApp';
 
+
 const App = () => {
-  const { isMenuOpen } = useGLobalContext();
+  const {isMenuOpen} = useGLobalContext();
+
   return (
-    <>
+    <> 
+    { !isMenuOpen ? 
+    (
+      <> 
       <Navbar />
-      <Category />
-      <ListArticle />
+      <Header />
+      <Step />
+      <FeaturedTopic />
+      <Fundraise />
+      <FundContent />
+      <GetStarted />
       <Footer />
-      { isMenuOpen && (
-        <MenuActive />
-      )}
+      </>
+    ) : (
+    <MenuBar /> 
+    )
+    }
     </>
   );
 };

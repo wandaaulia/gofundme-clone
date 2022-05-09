@@ -4,6 +4,7 @@ const MenuContext = createContext();
 
 const MenuProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const openMenu = () => {
     setIsMenuOpen(true);
   };
