@@ -140,7 +140,7 @@
 .content-step {
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    gap: 25px;
     align-items: flex-start;
     justify-content: flex-start;
     height: 125px;
@@ -149,12 +149,15 @@
         padding-bottom: 8px;
     }
 
+    @include xxs {
+        gap: 18px;
+    }
     @include md {
         flex-direction: column;
         height: 220px;
         gap: 5px;
         padding: 5px;
-        min-width: 280px;
+        min-width: 290px;
     }
 
     @include mdd {
@@ -171,6 +174,7 @@
         height: 380px;
     }
 }
+
 
 .content-step-left {
     height: 100%;

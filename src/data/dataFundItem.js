@@ -1,11 +1,18 @@
 /* eslint-disable quote-props */
 
 import img from '../assets/sunset.jpg';
+import img2 from '../assets/kids_sick.jpg';
+import img3 from '../assets/kids.jpg';
+import img4 from '../assets/sky.jpg';
+import img5 from '../assets/sun.jpg';
+import img6 from '../assets/food_package.jpg';
+import img7 from '../assets/books_kids.jpg';
+import img8 from '../assets/cat_Food.jpg';
 
 const datafunditem = [
   {
     'id': 1,
-    'title': 'Fundraiser 1 ',
+    'title': 'Help Flower Village',
     'img': img,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
@@ -13,64 +20,64 @@ const datafunditem = [
   },
   {
     'id': 2,
-    'title': 'For 2',
-    'img': img,
+    'title': 'Fundraiser for Archie',
+    'img': img2,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 3,
-    'title': 'Archie 3',
-    'img': img,
+    'title': 'Infrastructure for Our Village',
+    'img': img5,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 4,
-    'title': 'ie 4',
-    'img': img,
+    'title': 'Help Our Sky',
+    'img': img4,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 5,
-    'title': 'For Ar 5',
-    'img': img,
+    'title': 'Help Kids',
+    'img': img3,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 6,
-    'title': 'terakhir 6',
-    'img': img,
+    'title': 'Books for Street Kids',
+    'img': img7,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 7,
-    'title': 'ie 7',
-    'img': img,
+    'title': 'Food for Homeless',
+    'img': img6,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 8,
-    'title': 'For Ar 8',
-    'img': img,
+    'title': 'Good Food for Street Pets',
+    'img': img8,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,
   },
   {
     'id': 9,
-    'title': 'terakhir 9',
-    'img': img,
+    'title': 'Need Your Hands to help Mike',
+    'img': img2,
     'body': 'We have been saddened with the news that Archie Low has been diagnosed with AML Leukemia and has started his first round of chemotherapy and will undergo',
     'raise': 13.733,
     'donations': 14,

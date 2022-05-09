@@ -92,7 +92,7 @@ const FundContent = () => {
         <div className='fund-item-wide' ref={fundRef}>
           { fundWide.map((item) => ( 
           <div className='fund-wide' key={item.id}> 
-                <img src={item.img} alt='img' />
+          <div className='fund-wide-img'> <img src={item.img} alt='img' /> </div>
                 <div className='info-fund-wide'> 
                     <h3> {item.title} </h3>
                     <p> {item.body} </p>
