@@ -144,6 +144,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     height: 125px;
+    background-color: blue;
 
     h3 {
         padding-bottom: 8px;
@@ -151,6 +152,15 @@
 
     @include xxs {
         gap: 18px;
+        background-color: #333;
+    }
+
+    @include xs {
+        background-color: lightblue;
+    }
+
+    @include sm {
+        background-color: lightcoral;
     }
     @include md {
         flex-direction: column;
