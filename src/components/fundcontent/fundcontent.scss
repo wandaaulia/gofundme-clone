@@ -202,10 +202,12 @@
     display: flex;
     width: 100%;
     min-height: 50%;
+    justify-content: center;
+
     img {
         border-radius: 8px;
         width: 100%;
-        object-fit: cover;
+        height: 100%;
     }
 }
 
