@@ -140,7 +140,7 @@
 .content-step {
     display: flex;
     flex-direction: row;
-    gap:0px;
+    gap: 18px;
     align-items: flex-start;
     justify-content: flex-start;
     height: 125px;
@@ -206,8 +206,10 @@
 
 .content-step-right {
     min-width: 80%;
-    
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    background-color: lightpink;
+    margin: 0px 10px 0px auto;
     
 
     p {
@@ -221,7 +223,7 @@
   
     @include xxs {
         background-color: blue;
-        padding-left: 0px;
+        margin: 0px 10px 0px auto;
 
     p {
         font-size: 0.95rem;
