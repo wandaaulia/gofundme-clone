@@ -80,6 +80,7 @@
 .fundraise-bottom {
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 
     @include xxs {
         gap: 18px;
