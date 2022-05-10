@@ -52,17 +52,17 @@ const Footer = () => {
       <div className='footer-bottom'>
         <div className='footer-bottom-1'>
           <button className='button-footer' type='button'> 
-          <p> United States </p>
+          <p className='btn-us'> United States </p>
           <div className='titik'>  </div>
-          <p> English </p>
+          <p className='btn-eng'> English </p>
           </button>
           <div className='logo-socialmedia'>
-            <FaFacebookSquare />
-            <FaYoutube />
-            <FaTwitter />
-            <FaInstagram />
-            <BsMedium />
-            <RiMicFill />
+            <FaFacebookSquare className='icon-socialmedia'/>
+            <FaYoutube className='icon-socialmedia'/>
+            <FaTwitter className='icon-socialmedia'/>
+            <FaInstagram className='icon-socialmedia'/>
+            <BsMedium className='icon-socialmedia'/>
+            <RiMicFill className='icon-socialmedia'/>
           </div>
         </div>
         <div className='footer-bottom-2'>
