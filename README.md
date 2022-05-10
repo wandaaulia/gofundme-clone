@@ -1,7 +1,7 @@
 # GoFundMe Clone
 GoFundMe Clone created with ReactJs and SASS
 
-### [Live Site](https://travel-blog-theta.vercel.app/)
+### [Live Site](https://wandaaulia.github.io/gofundme-clone/)
 
 ## Technologies
 Project is created with:
