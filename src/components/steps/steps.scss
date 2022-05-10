@@ -179,11 +179,15 @@
 
 .content-step-left {
     height: 100%;
-    width: 10%;
+    min-width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @include xs {
+        width: 10%;
+    }
 
     @include md {
         flex-direction: row;
@@ -197,7 +201,10 @@
 }
 
 .content-step-right {
-  
+    min-width: 80%;
+
+    background-color: green;
+
     p {
         color: rgb(118, 118, 118);
         font-size: 0.95rem;
@@ -206,6 +213,15 @@
     h3 {
         color: rgb(51, 51, 51);
     }
+  
+    @include xxs {
+        background-color: blue;
+
+    p {
+        font-size: 0.95rem;
+    }
+    }
+
 
     @include md {
         padding: 0px 20px 0px 0px;
