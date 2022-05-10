@@ -149,6 +149,10 @@
         padding-bottom: 8px;
     }
 
+    @include xxs {
+        gap: 18px; 
+    }  
+
     @include xs {
         gap: 18px;
     }
@@ -201,8 +205,8 @@
 }
 
 .content-step-right {
-    // min-width: 80%;
-    padding-left: 10%;
+    min-width: 80%;
+    padding-left:  20px;
 
     background-color: green;
     
