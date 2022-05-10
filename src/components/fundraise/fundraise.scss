@@ -80,7 +80,10 @@
 .fundraise-bottom {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+
+    @include xxs {
+        gap: 18px;
+    }
 
     @include md {
         flex-direction: row;
@@ -125,6 +128,11 @@
     padding: 4px 2px;
     border-radius: 16px;
     cursor: pointer;
+    margin-bottom: 18px;
+
+    @include xxs {
+        margin-bottom: 0px;
+    }
 
     @include md {
         min-width: 50%;

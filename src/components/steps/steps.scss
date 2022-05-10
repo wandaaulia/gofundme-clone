@@ -208,7 +208,6 @@
     min-width: 80%;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
     margin: 0px auto 0px 15px;
     
 
@@ -222,7 +221,6 @@
     }
   
     @include xxs {
-        background-color: blue;
         margin: 0px 10px 0px auto;
 
     p {
